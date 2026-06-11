@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoTV App</title>
-    <!-- Esto ayuda a que el navegador entienda el código JSX de manera simple -->
-    <script src="https://unpkg.com/unpkg.com@6.2.4/dist/babel.min.js"></script>
-</head>
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    -->
+    </head>
 <body>
     <div id="root"></div>
 
-    <!-- Aquí vinculamos tu archivo de código -->
-    <script type="text/babel" src="GoTV.jsx"></script>
+    <script type="text/babel">
+
+
+        function App() {
+            return (
+                <div style={{ padding: '20px', textAlign: 'center', fontFamily: 'sans-serif' }}>
+                    <h1>¡Tu aplicación GoTV está cargando con éxito!</h1>
+                    <p>Si ves esto, reemplaza este bloque de código con el tuyo.</p>
+                </div>
+            );
+        }
+
+
+        // 2. ESTA LÍNEA DE ABAJO ES CRUCIAL: Se encarga de pintar tu componente en la pantalla.
+        // Nota: Asegúrate de cambiar "App" por el nombre de tu componente principal si se llama diferente (ej: GoTV).
+        const root = Reinhart || ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+
+    </script>
 </body>
-    
 </html>
